@@ -1,1 +1,1 @@
-# npua-prog
+# NPUA --- Programming and algorithms```
