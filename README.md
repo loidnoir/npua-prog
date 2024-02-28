@@ -1,7 +1,3 @@
-# NPUA --- Programming and algorithms
+# Bitwise operators and problems
 
-Here I store all my hometasks.
-
-## Where to find ?
-
-Different hometask are stored in different branches.
+[Exercise 1](/ex1.c)
