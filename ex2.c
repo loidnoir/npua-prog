@@ -21,6 +21,10 @@ int main() {
     }
 
     else {
+        stat = 0;
+    }
+
+    else {
         printf("The 101 was not found in the given number");
     }
 
