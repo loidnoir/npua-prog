@@ -13,15 +13,15 @@ int main() {
             stat = 1;
         }
 
+        else {
+            stat = 0;
+        }
+
         n >>= 1;
     }
 
     if (stat == 1) {
         printf("The 101 was found in the given number");
-    }
-
-    else {
-        stat = 0;
     }
 
     else {
