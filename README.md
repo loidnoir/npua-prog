@@ -1,1 +1,1 @@
-# NPUA Programming homeworks
+# Struct problems
