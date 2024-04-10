@@ -18,7 +18,7 @@ int main() {
 
     int n;
 
-    printf("Please input the amount of users to create: ");
+    printf("Please input the amount of users: ");
     scanf("%d", &n);
 
     struct Student students[n];
