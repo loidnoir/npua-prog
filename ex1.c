@@ -14,7 +14,7 @@ struct Phone {
 };
 
 struct Person {
-    char[30] AAH;
+    char AAH[30];
     int birthYear;
     struct Adress address;
     struct Phone phone;
