@@ -30,7 +30,7 @@ int main() {
     
     for (int i = 0; i < n; i++) {
         printf("Input the %d'th person's AAH: ", i+1);
-        char[30] AAH;
+        char AAH[30];
         getchar();
         gets(AAH);
         strcpy(people[i].AAH, AAH);
@@ -39,13 +39,13 @@ int main() {
         scanf("%d", &people[i].birthYear);
         
         printf("Input the %d'th person's city name: ", i+1);
-        char[30] city;
+        char city[30];
         getchar();
         gets(city);
         strcpy(people[i].address.city, city);
         
         printf("Input the %d'th person's street name: ", i+1);
-        char[30] street;
+        char street[30];
         getchar();
         gets(street);
         strcpy(people[i].address.street, street);
@@ -57,13 +57,13 @@ int main() {
         scanf("%d", &people[i].address.apartment);
         
         printf("Input the %d'th person's home phone number: ", i+1);
-        char[30] homePhone;
+        char homePhone[30];
         getchar();
         gets(homePhone);
         strcpy(people[i].phone.home, homePhone);
         
         printf("Input the %d'th person's cell phone number: ", i+1);
-        char[30] cellPhone;
+        char cellPhone[30];
         getchar();
         gets(cellPhone);
         strcpy(people[i].phone.cell, cellPhone);
