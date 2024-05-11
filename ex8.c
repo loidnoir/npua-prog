@@ -12,15 +12,16 @@ int main() {
     int X[N];
 
     for (int i = 0; i < N; i++) {
-        printf("Enter %d-th number for X: ", i+1);
-        scanf("%d", &X[i]); 
+        printf("Enter %d-th number for X: ", i + 1);
+        scanf("%d", &X[i]);
     }
 
     bool T = false;
     int consecutiveZeros = 0;
+    int *ptrX = X;
 
     for (int i = 0; i < N; ++i) {
-        if (X[i] == 0) {
+        if (*ptrX == 0) {
             consecutiveZeros++;
         } else {
             consecutiveZeros = 0;
@@ -30,6 +31,8 @@ int main() {
             T = true;
             break;
         }
+
+        ptrX++;
     }
 
     printf("T: %s\n", T ? "true" : "false");

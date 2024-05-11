@@ -12,17 +12,19 @@ int main() {
     int X[N];
 
     for (int i = 0; i < N; i++) {
-        printf("Enter %d-th number for X: ", i+1);
-        scanf("%d", &X[i]); 
+        printf("Enter %d-th number for X: ", i + 1);
+        scanf("%d", &X[i]);
     }
 
     bool allValuesInRange = true;
+    int *ptrX = X;
 
-    for (int i = 0; i < N; ++i) {
-        if (X[i] != i + 1) {
+    for (int i = 1; i <= N; ++i) {
+        if (*ptrX != i) {
             allValuesInRange = false;
             break;
         }
+        ptrX++;
     }
 
     printf("%d\n", allValuesInRange ? 1 : 0);

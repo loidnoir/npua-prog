@@ -9,16 +9,21 @@ int main() {
     } while (N <= 2);
 
     int A[N], B[N];
+    int *ptrA = A;
+    int *ptrB = B;
 
     for (int i = 0; i < N; i++) {
         printf("Enter %d-th number for X: ", i+1);
-        scanf("%d", &A[i]);
+        scanf("%d", ptrA);
 
-        B[i] = A[i];
+        *ptrB = *ptrA;
 
         for (int j = 0; j < i; j++) {
-            B[i] += A[j];
+            *ptrB += *(A + j);
         }
+
+        ptrA++;
+        ptrB++;
     }
 
     printf("Here are values of B: ");
